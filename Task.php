@@ -1,8 +1,12 @@
 <?php
 
 class Task {
-public $description = 'Go to the store';
+public $description;
 
+    public function __construct()
+    {
+        var_dump('expression');
+    }
 }
 
 $task = new Task();
