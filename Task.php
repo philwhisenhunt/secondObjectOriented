@@ -1,14 +1,14 @@
 <?php
 
 class Task {
-public $description;
+    public $description;
 
-    public function __construct()
+    public function __construct($description)
     {
-        var_dump('expression');
+        var_dump($description);
     }
 }
 
-$task = new Task();
+$task = new Task('Learn OOP');
 
 var_dump($task->description);
