@@ -10,5 +10,6 @@ class Task {
 }
 
 $task = new Task('Learn OOP');
+$task2 = new Task('Pick up groceries');
 
-var_dump($task->description);
+var_dump($task2->description);
