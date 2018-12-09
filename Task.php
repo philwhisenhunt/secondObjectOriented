@@ -3,6 +3,8 @@
 class Task {
     public $description;
 
+    public $completed = false;
+
     public function __construct($description)
     {
         $this->description = $description;    
@@ -10,6 +12,5 @@ class Task {
 }
 
 $task = new Task('Learn OOP');
-$task2 = new Task('Pick up groceries');
 
-var_dump($task2->description);
+var_dump($task->completed);
