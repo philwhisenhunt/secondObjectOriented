@@ -5,7 +5,7 @@ class Task {
 
     public function __construct($description)
     {
-        var_dump($description);
+        $this->description = $description;    
     }
 }
 
