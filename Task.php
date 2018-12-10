@@ -9,8 +9,14 @@ class Task {
     {
         $this->description = $description;    
     }
+
+    public function complete()
+    {
+        $this->completed = true;
+    }
 }
 
 $task = new Task('Learn OOP');
+$task->complete();
 
 var_dump($task->completed);
