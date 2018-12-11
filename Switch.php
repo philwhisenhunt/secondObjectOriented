@@ -1,12 +1,12 @@
 <?php
 
 class LightSwitch {
-    public function on()
+    private function on()
     {
 
     }
 
-    public function off()
+    private function off()
     {
 
     }
