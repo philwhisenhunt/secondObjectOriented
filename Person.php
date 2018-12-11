@@ -11,3 +11,5 @@ class Person {
 
 $john = new Person('John Doe');
 $john->age = 30;
+
+var_dump($john);

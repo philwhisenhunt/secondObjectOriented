@@ -19,7 +19,7 @@ class Task {
     }
 }
 
-$task = new Task('Learn OOP'); 
+$task = new Task('Learn OOP', 'do whatever it takes'); 
 $task->complete();
 
 var_dump($task->completed);
