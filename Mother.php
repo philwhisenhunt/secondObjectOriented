@@ -1,16 +1,22 @@
 <?php
+class shape {
 
-class Mother {
+    protected $length = 4;
 
-    public function getEyeCount()
+    public function getArea()
     {
-        return
+        return pow($this->length, 2);
     }
 
+    
 }
 
-class Child extends Mother {
+class Square extends Shape{
 
 }
 
-(new Child)->getEyeCount();
+class Triangle extends Shape{
+
+}
+
+echo (new Square)->getArea();
