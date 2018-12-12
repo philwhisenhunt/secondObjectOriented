@@ -12,16 +12,16 @@ function findIt(array $seq){
 
     for($i=0; $i<count($seq); $i++){
         if(array_key_exists($seq[$i], $keyArray)){
-            $keyArray[$i] += 1;
+            $keyArray[$seq[$i]] += 1;
         }
         else{
-            $keyArray[$i] = $seq[$i];
+            $keyArray[$seq[$i]] = 1;
         }
     }
 
-
+return $keyArray;
 
 }
 
 $seq = Array(20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5);
-print(findIt($seq));
+print_r(findIt($seq));
