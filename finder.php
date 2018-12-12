@@ -1,5 +1,5 @@
 <?php
-function findIt(array $seq)
+function findIt(array $seq){
 
 //make a for loop to cycle through each part of the array
 //make an associative array for each entry but..
@@ -8,6 +8,16 @@ function findIt(array $seq)
 //for each thing, see if a key exists
 //if it does then add to it,
 //else make a new key
+    $keyArray = Array();
+
+    for($i=0; $i<count($seq); $i++){
+        if(array_key_exists($seq[$i], $keyArray)){
+            $keyArray[$i] += 1;
+        }
+        else{
+            $keyArray[$i] = $seq[$i];
+        }
+    }
 
 
 
