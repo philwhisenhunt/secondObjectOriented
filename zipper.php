@@ -10,7 +10,7 @@ function zipper($array1, $array2){
         //add the longer array
         //if short array entry exists, add it too
 
-        if(count($array1) > count($array2))
+    
 
     $mergedArray = Array();
     
