@@ -11,6 +11,7 @@ function findIt(array $seq){
     $keyArray = Array();
 
     for($i=0; $i<count($seq); $i++){
+        
         if(array_key_exists($seq[$i], $keyArray)){
             $keyArray[$seq[$i]] += 1;
         }
@@ -19,7 +20,15 @@ function findIt(array $seq){
         }
     }
 
-return $keyArray;
+// return $keyArray;
+
+    foreach($keyArray as $entry => $value){
+
+        if($value % 2 != 0){
+        return $entry;
+
+        }
+    }
 
 }
 

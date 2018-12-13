@@ -16,6 +16,12 @@ class Square extends Shape{
 }
 
 class Triangle extends Shape{
+    protected $base = 4;
+    protected $height = 7;
+    public function getArea()
+    {
+        return .5 * $this->base *$this->height;
+    }
 
 }
 
