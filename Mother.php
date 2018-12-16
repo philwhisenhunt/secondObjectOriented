@@ -36,3 +36,4 @@ class Circle extends Shape {
 
 
 echo (new Circle)->getArea();
+echo (new Triange)->getArea();
