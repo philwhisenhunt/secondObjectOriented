@@ -1,0 +1,10 @@
+<?
+
+class Person {
+
+
+}
+
+class Business {
+    
+}
