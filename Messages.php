@@ -19,10 +19,15 @@ class Business {
 
     public function hire(Person $person)
     {
-        //add $person to the staff collection 
+        $this->staff->add($person);
     }
 }
 
 class Staff {
+    protected $members = []
+    public function add(Person $person)
+    {
+
+    }
     
 }
