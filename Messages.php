@@ -11,7 +11,10 @@ class Person {
 }
 
 class Business {
+    public function hire(Person $person)
+    {
 
+    }
 }
 
 class Staff {
