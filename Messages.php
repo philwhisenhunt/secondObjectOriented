@@ -25,6 +25,12 @@ class Business {
 
 class Staff {
     protected $members = [];
+
+    //You can defauly to array if it is not required that a staff have members. 
+    public function __construct($members = [])
+    {
+        $this->members = $members;
+    }
     public function add(Person $person)
     {
         $this->members[] = $person;
