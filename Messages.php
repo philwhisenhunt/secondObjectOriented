@@ -1,4 +1,4 @@
-<?
+<?php
 
 class Person {
     protected $name;
@@ -24,10 +24,17 @@ class Business {
 }
 
 class Staff {
-    protected $members = []
+    protected $members = [];
     public function add(Person $person)
     {
-
+        $this->members[] = $person;
     }
     
 }
+
+$jeffrey = new Person('Jeffrey Way');
+$staff = new Staff;
+$laracasts = new Business($staff);
+
+$laracasts->hire($jeffrey);
+var_dump($staff);
