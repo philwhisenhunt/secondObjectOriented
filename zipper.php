@@ -15,8 +15,15 @@ function zipper($array1, $array2){
     $mergedArray = Array();
     
     for($i=0; $i<count($array1); $i++){
-        $mergedArray[] = $array1[$i];
-        $mergedArray[] = $array2[$i];
+
+        if($i < count($array1)){
+            $mergedArray[] = $array1[$i];
+        }
+
+        if($i < count($array2)){
+            $mergedArray[] = $array2[$i];
+
+        }
         
     }
     return $mergedArray;

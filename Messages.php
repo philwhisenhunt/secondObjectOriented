@@ -21,6 +21,11 @@ class Business {
     {
         $this->staff->add($person);
     }
+
+    public function getStaffMembers()
+    {
+        return $this->staff->members();
+    }
 }
 
 class Staff {
@@ -35,6 +40,11 @@ class Staff {
     {
         $this->members[] = $person;
     }
+
+    public function members()
+    {
+        return $this->members;
+    }
     
 }
 
@@ -45,4 +55,4 @@ $laracasts = new Business($staff);
 // $laracasts->hire($jeffrey);
 $laracasts->hire(new Person('Jane Doe'));
 
-var_dump($staff);
+var_dump($laracasts->getStaffMembers());
