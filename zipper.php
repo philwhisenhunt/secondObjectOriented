@@ -1,27 +1,26 @@
 <?php 
 
 function zipper($array1, $array2){
-    //figure out longer array
-    //make a new array name for longer array
-
-    //make a new merged array
-
-    //for each entry in longer array..
-        //add the longer array
-        //if short array entry exists, add it too
-
-    
-
+  
     $mergedArray = Array();
-    
-    for($i=0; $i<count($array1); $i++){
 
-        if($i < count($array1)){
-            $mergedArray[] = $array1[$i];
+    if($array1 < $array2){
+        $lessThanArray = $array1;
+        $greaterArray = $array2;
+    }
+    else{
+        $lessThanArray = $array2;
+        $greaterArray = $array1;
+    }
+    
+    for($i=0; $i<count($greaterArray); $i++){
+
+        if($i < count($greaterArray)){
+            $mergedArray[] = $greaterArray[$i];
         }
 
-        if($i < count($array2)){
-            $mergedArray[] = $array2[$i];
+        if($i < count($lessThanArray)){
+            $mergedArray[] = $lessThanArray[$i];
 
         }
         
