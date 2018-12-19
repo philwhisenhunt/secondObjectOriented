@@ -4,6 +4,7 @@ function zipper($array1, $array2){
 
     $mergedArray = Array();
 
+    //turn into ternary operator ?:
     $maxSize = count($array1);
     if($maxSize < count($array2)){
         $maxSize = count($array2);
@@ -30,7 +31,7 @@ $array1 = Array(1,1,1,1,1,1,1,7);
 $array2 = Array(0,0,0,0,0,0,0,0,0,0,0,0,0);
 
 print_r(zipper($array1, $array2));
-
+//changes
 //
 // How to use this? When I tried before had trouble with the way you take in input. 
 
